@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterCloud.WebApp", "TwitterCloud.WebApp\TwitterCloud.WebApp.csproj", "{08A2F550-D9B1-4A71-BC34-24DC4E1EF58B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterClout.Tests", "TwitterClout.Tests\TwitterClout.Tests.csproj", "{26BE32C9-D4D7-4972-80DD-34987B965B02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08A2F550-D9B1-4A71-BC34-24DC4E1EF58B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A2F550-D9B1-4A71-BC34-24DC4E1EF58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A2F550-D9B1-4A71-BC34-24DC4E1EF58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A2F550-D9B1-4A71-BC34-24DC4E1EF58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26BE32C9-D4D7-4972-80DD-34987B965B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26BE32C9-D4D7-4972-80DD-34987B965B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26BE32C9-D4D7-4972-80DD-34987B965B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26BE32C9-D4D7-4972-80DD-34987B965B02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
