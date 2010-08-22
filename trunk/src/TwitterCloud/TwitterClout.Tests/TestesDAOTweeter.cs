@@ -26,7 +26,7 @@ namespace TwitterClout.Tests
                                 .E(UmDAODeTwitter)
                             .Quando(PesquisoAHashtag)
                             .Entao(NãoÉNulo)
-                                .E(Há_Tweets, 10)
+                                .E(Há_Tweets, 30)
                                 .E(ReceboTweetsComAHashtag)
                 .ExecuteWithReport();
         }
@@ -60,14 +60,6 @@ namespace TwitterClout.Tests
         private void ReceboTweetsComAHashtag()
         {
             _pesquisa.Entries.ForEach(s => StringAssert.Contains(_hashtag.ToLower(), s.Content.ToLower()));
-        }
-    }
-    [TestFixture]
-    public class TestesAgregadorTweets
-    {
-        [Test]
-        public void PesquisarNoTwitter()
-        {
         }
     }
 }
