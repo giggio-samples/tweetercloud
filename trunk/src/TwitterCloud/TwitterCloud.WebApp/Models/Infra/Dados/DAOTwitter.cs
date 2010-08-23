@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using LinqToTwitter;
 
 namespace TwitterCloud.WebApp.Models.Infra.Dados
@@ -15,15 +14,8 @@ namespace TwitterCloud.WebApp.Models.Infra.Dados
                 where pesquisa.Type == SearchType.Search &&
                       pesquisa.Query == stringDePesquisa &&
                       pesquisa.Page == 1 &&
-                      pesquisa.PageSize == 30
+                      pesquisa.PageSize == 100
                 select pesquisa;
-            var tweets = queryResults.Single().Entries.Select(e => e.Title);
-            var tweet = queryResults.Single().Entries.First();
-            var stringtweets = "";
-            foreach (var stringtweet in tweets)
-            {
-                stringtweets += @"""" + stringtweet +  "\"\n" ;
-            }
             return queryResults.Single();
         }
     }

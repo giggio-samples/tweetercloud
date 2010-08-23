@@ -29,7 +29,7 @@ namespace TwitterClout.Tests
                             .Entao(Recebo_PalavrasAgregadas, 30)
                                 .E(ReceboAsPalavrasAgregadasPorImportancia)
                                 .E(NenhumaPalavraÉIgual)
-                .Execute();
+                .ExecuteWithReport();
         }
 
         

@@ -26,7 +26,7 @@ namespace TwitterClout.Tests
                                 .E(UmDAODeTwitter)
                             .Quando(PesquisoAHashtag)
                             .Entao(NãoÉNulo)
-                                .E(Há_Tweets, 30)
+                                .E(Há_Tweets, 100)
                                 .E(ReceboTweetsComAHashtag)
                 .ExecuteWithReport();
         }
